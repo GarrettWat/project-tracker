@@ -8,7 +8,7 @@ function Navbar() {
     <div className='nav'>
         <a href="/"><img src={Logo} alt="Logo" className='Logo'/></a>
         <ul className='list'>
-            <a href="" className='nav-links'><li>Sign In</li></a>
+            <a href="/signin" className='nav-links'><li>Sign In</li></a>
         </ul>
     </div>
     )
