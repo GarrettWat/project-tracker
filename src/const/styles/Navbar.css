@@ -16,9 +16,10 @@
 .list {
     display: flex;
     justify-content: space-between;
+    width: 50%;
+    padding-right: 20px;
     align-items: center;
     width: 10%;
-    margin-right: 100px;
     list-style: none;
     color: #2272FF;
 }
@@ -27,7 +28,7 @@
     color: #2272FF;
     font-size: 20px;
     font-weight: bold;
-    margin: 0 20px;
+    
 }
 .nav-links:hover {
     color: #2272FF;

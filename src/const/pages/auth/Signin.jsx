@@ -1,16 +1,18 @@
 import React from 'react'
 import '../../styles/Signin.css'
-import { useState, useEffect } from 'react'
+import { useState, useEffect} from 'react'
+import { useNavigate } from 'react-router-dom'
 import { auth } from '../../../firebase'
 import { signInWithEmailAndPassword } from 'firebase/auth'
 
 function Signin() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-
-  const signIn = (e) => {
+  const navigate = useNavigate()
+  const signIn = async (e) => {
     e.preventDefault();
-    signInWithEmailAndPassword(auth, email, password)
+    console.log(email, password)
+    await signInWithEmailAndPassword(auth, email, password)
     .then((userCredenial) => {
       console.log(userCredenial)
       })
